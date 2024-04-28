@@ -381,6 +381,14 @@ else {
 // • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
 
 // • If the person is age 65 or older, print a message that the person is an elder.
+ 
+let age=13;
+if (age < 2) {console .log("The person is a baby.");}
+else if ( age >=2 && age < 4){console.log("The person is a toddler.");}
+else if ( age >=4 && age < 13){console.log("The person is a kid.");}
+else if ( age >=13 && age < 20){console.log("The person is a teenager.");}
+else if ( age >=20 && age < 65){console.log("The person is a adult.");}
+else {console.log("The person is a elder.");}
 
  
 
