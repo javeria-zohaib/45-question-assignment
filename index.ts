@@ -394,6 +394,24 @@ else {console.log("The person is a elder.");}
 // • Make a array of your three favorite fruits and call it favorite_fruits.
 
 // • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+let favourite_fruits:string[]=["apple", "banana","mango"];
+if (favourite_fruits.includes("banana")){console.log("I really like banana!");}
+if (favourite_fruits.includes("mango")){console.log("I really like mango!");}
+if (favourite_fruits.includes("apple")){console.log("I really like apple!");}
+if (favourite_fruits.includes("orange")){console.log("I donot like orange");}
+if (favourite_fruits.includes("strawberries")){console.log("I  don't like strawberries!");}
+// Ques:30
+// Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+// • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+
+// • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+let userName:string[]=['Admin', 'khadija','Ammara','aiza','shagufta'];
+for( let i=0; i<userName.length;i++){
+    if(userName[i]==='Admin') {console.log("Hello admin, would you like to see a status report?");}
+    else{console.log(`Hello ${userName[i]}, thank you for logging in again`);}
+};
+
+
 
 
  
