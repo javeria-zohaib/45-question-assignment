@@ -208,3 +208,108 @@ console.log(test9, "I predict false");
 // test 10
 let test10 = ten < 5;
 console.log(test10, "I predict false");
+// QUES:24
+// More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// • Tests for equality and inequality with strings
+// • Tests using the lower case function
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+// • Tests using "and" and "or" operators
+// • Test whether an item is in a array
+// • Test whether an item is not in a array
+let str1 = "Javeria";
+let str2 = "rehman";
+let num1 = 5;
+let num2 = 10;
+let Arr = [1, 2, 3, 4, 5];
+console.log("Tests for equality and inequality with strings");
+console.log(str1 === "Javeria");
+console.log(str1 === str2);
+console.log("Tests using the lower case function");
+console.log(str1.toLowerCase() === "javeria");
+console.log(str2.toLowerCase() === "Rehman");
+console.log("Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to");
+console.log(1 < 2);
+console.log(num1 === 10);
+console.log(num2 >= 10);
+console.log(num1 >= 15);
+console.log(num1 >= num2);
+console.log(num1 !== num2);
+console.log("Tests using and and or operators");
+console.log(num1 < 10 && num2 == 10);
+console.log(num1 > 6 || num2 > 15);
+console.log("\n Test whether an item is in a array");
+console.log(Arr.includes(3));
+console.log(Arr.includes(6));
+console.log("\n Test whether an item is not in a array");
+console.log(!Arr.includes(6));
+console.log(!Arr.includes(2));
+// QUES:25 Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+// • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
+let alien_color = "green";
+if (alien_color === "green") {
+    console.log("congratulations you just earned 5 points");
+}
+;
+// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
+let alien_Color = "red";
+if (alien_Color === "green") {
+    console.log("congratulations you just earned 5 points");
+}
+//  QUES:26 
+// Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+// • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+// • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+// • Write one version of this program that runs the if block and another that runs the else block.
+let aliencolor = "green";
+if (aliencolor === "green") {
+    console.log("congratulations you just earned 5 points");
+}
+else {
+    console.log("congratulations you just earned 10 points");
+}
+// version 2
+let alienColor = "red";
+if (alienColor === "green") {
+    console.log("congratulations you just earned 5 points");
+}
+else {
+    console.log("congratulations you just earned 10 points");
+}
+// QUES:27
+// Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+// • If the alien is green, print a message that the player earned 5 points.
+// • If the alien is yellow, print a message that the player earned 10 points.
+// • If the alien is red, print a message that the player earned 15 points.
+// • Write three versions of this program, making sure each message is printed for the appropriate color alien.
+let aliencolor1 = "yellow";
+if (aliencolor1 === "green") {
+    console.log("congratulations you just earned 5 points");
+}
+else if (aliencolor1 === "yellow") {
+    console.log("congratulations you just earned 10 points");
+}
+else {
+    console.log("congratulations you just earned 15 points");
+}
+// version 2
+let alien_Color1 = "green";
+if (alien_Color1 === "green") {
+    console.log("congratulations you just earned 5 points");
+}
+else if (alien_Color1 === "yellow") {
+    console.log("congratulations you just earned 15 points");
+}
+else {
+    console.log("congratulations you just earned 15 points");
+}
+// version 3
+let alienColor1 = "red";
+if (alienColor1 === "green") {
+    console.log("congratulations you just earned 5 points");
+}
+else if (alienColor1 === "yellow") {
+    console.log("congratulations you just earned 15 points");
+}
+else {
+    console.log("congratulations you just earned 15 points");
+}
