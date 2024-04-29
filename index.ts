@@ -481,6 +481,16 @@ for(let petanimal of animal) {
 }
 console.log("Any of these animals would make a great pet!");
 console.log("Pets aren't just animals; they're family members who fill our lives with unconditional love and joy");
+
+// QUES:36
+// T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
+function make_shirt(size:string,text_message:string){
+    
+    console.log(`You have selected shirt in ${size} size, with message ${text_message} print on it`);}
+    make_shirt("large","Create Your Own Sunshine");
+make_shirt("medium","Make Today Amazing");
+
+
     
 
 
