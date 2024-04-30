@@ -449,3 +449,30 @@ function make_shirt(size, text_message) {
 }
 make_shirt("large", "Create Your Own Sunshine");
 make_shirt("medium", "Make Today Amazing");
+// QUES:37
+// Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+function makeshirt(size = "large", message = "i love typescript") {
+    console.log(`creatinag a ${size} shirt with  ${message} print on it`);
+}
+makeshirt();
+// medium shirt with default message
+makeshirt("medium");
+// with any size and different message
+makeshirt("small", "keep Calm and learn typescript");
+// QUES:38
+// Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+function describe_city(city, country = "pakistan") {
+    console.log(`${city} is in ${country}`);
+}
+describe_city("karachi");
+describe_city("lahore");
+// with change country
+describe_city("delhi", "India");
+// QUES:39 City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+// "Lahore, Pakistan"
+function city_country(city, country) {
+    return `${city},${country}`;
+}
+console.log(city_country("karachi", "pakistan"));
+console.log(city_country("lahore", "pakistan"));
+console.log(city_country("berlin", "germany"));
