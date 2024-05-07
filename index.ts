@@ -525,7 +525,7 @@ show_magicians(magician_name);
 // QUES:42 Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
 
 
-function show_magicians1 (magician:string[]){
+function showmagicians (magician:string[]){
     magician.forEach(name =>console.log(name));
 }
 function make_great (magician:string[]) {
@@ -533,7 +533,27 @@ function make_great (magician:string[]) {
 }
 let magicianName:string[]=["harrypotter","Harry Houdini","David Copperfield"];
 let greatMagician=make_great(magicianName);
-show_magicians(greatMagician);
+showmagicians(greatMagician);
+// QUES:43 Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+function showMagicians (magician:string[]){
+    magician.forEach(name =>console.log(name));
+}
+function makeGreat (magician:string[]) {
+    return magician.map (name => `The great ${name}`)
+}
+let magicianName1:string[]=["harrypotter","Harry Houdini","David Copperfield"];
+// making copy of original array through slice function
+let copy_magician_name=magicianName1.slice();
+// modifying copied array and add the great with magician names
+ let copy_great_magician=makeGreat(copy_magician_name);
+//  show both arrays copied and original
+// original
+
+showMagicians(magicianName);
+// copied
+showMagicians(copy_great_magician);
+
+
 
 
 
