@@ -476,3 +476,19 @@ function city_country(city, country) {
 console.log(city_country("karachi", "pakistan"));
 console.log(city_country("lahore", "pakistan"));
 console.log(city_country("berlin", "germany"));
+// QUES:41 Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+function show_magicians(magician) {
+    magician.forEach(name => console.log(name));
+}
+let magician_name = ["harrypotter", "Harry Houdini", "David Copperfield"];
+show_magicians(magician_name);
+// QUES:42 Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+function show_magicians1(magician) {
+    magician.forEach(name => console.log(name));
+}
+function make_great(magician) {
+    return magician.map(name => `The great ${name}`);
+}
+let magicianName = ["harrypotter", "Harry Houdini", "David Copperfield"];
+let greatMagician = make_great(magicianName);
+show_magicians(greatMagician);
