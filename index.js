@@ -518,3 +518,9 @@ function makeSandwich(...item) {
 makeSandwich("chicken", "cocumber", "mayo");
 makeSandwich("bread", "nutella");
 makeSandwich("cheedar cheese", "chicken", "egg", "lettuce", 'tomato');
+function createCar(manufacturer, model, optional) {
+    return Object.assign({ manufacturer,
+        model }, optional);
+}
+let myCar = createCar("toyotta", "carolla", { color: "silver", year: "2024" });
+console.log(myCar);
