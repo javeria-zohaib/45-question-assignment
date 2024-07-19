@@ -492,7 +492,7 @@ make_shirt("medium","Make Today Amazing");
 // QUES:37
 // Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 function makeshirt (size:string= "large" ,message:string="i love typescript"){
-    console.log(`creatinag a ${size} shirt with  ${message} print on it`);
+    console.log(`creating a ${size} shirt with  ${message} print on it`);
 }
 makeshirt();
 // medium shirt with default message
